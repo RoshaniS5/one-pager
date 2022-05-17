@@ -1,6 +1,74 @@
 <!DOCTYPE html>
 <html>
     <body>
-        smth
+        <h1> TEDxSoftDev: Mathematica </h1>
+        <h2> By HeRo (<i>He</i>be Huang and <i>Ro</i>shani Shrestha) </h2>
+
+        <h3> Who is Stephen Wolfram? </h3>
+        <p>If you’ve ever heard of Wolfram|Alpha or even used it before, you know that it’s a useful tool for solving math problems. Stephen Wolfram, the creator of this beloved software, is also the creator of other software, including Mathematica.</p>
+        <!-- picture of Stephen Wolfram -->
+        <p>He is the youngest recipient of the MacArthur Fellowship in 1981. He strives to make the world’s knowledge computable and accessible to everyone.</p>
+
+        <h3> Mathematica </h3>
+        <p>The software, although useful, is not free. However, there is a 15-day free trial that you can use to explore. You can either download Mathematica or use Mathematica Online, which is a little more limited than the downloaded version.</p>
+        <!-- picture of the mathematica homepage -->
+        <p>As you figure out how to use this new software, a good place to start would be to open up a new notebook. By pressing the down arrow, you can add new sections. The default language of an input cell is the Wolfram language, but there are other types of input and text.</p>
+
+        <h3> Free-form Input </h3>
+        <p>As you actually begin to tinker with Mathematica’s functionality, make sure to familiarize yourself with free-form input, which utilizes commands in plain English, such as “picture of a dog,” which does exactly what you’d expect.</p>
+        <!-- picture of pic of dog -->
+        <p>As you can see, the input is next to an equals sign. Shift and Enter completes the command. Here’s another example of free-form input:</p>
+        <!-- picture of sine plot -->
+
+        <h3> Wolfram Language </h3>
+        <h4> Syntax </h4>
+        <p>Of course, Mathematica doesn’t only have free-form input. There is also the Wolfram Language you have to familiarize yourself with if you would like to perform much cooler commands. Mathematica utilizes symbolic expressions in the form of head[arguments].</p>
+        <p>Immediate assignment works in similar ways to other languages.</p>
+        <!-- picture of var -->
+        <p>As you can see, rational numbers in Mathematica are represented by fractions, which is useful for preventing rounding errors that occur when using decimals.</p>
+        <p>There is also continuous assignment, which allows a variable to change every time it is called.</p>
+        <!-- picture of t -->
+
+        <h4> Functions </h4>
+        <p>The parameters of a function in Mathematica are placed in brackets and the first letter of each word in a function is capitalized (such as the L and T in LocalTime).</p>
+        <!-- [picture of functions] -->
+        <p>Above are examples of creating and using functions.</p>
+
+        <h4> Lists </h4>
+        <p>To create lists, insert the elements separated by commas in curly braces. These lists use one-based indexing, which helps us differentiate between the Mathematica lists and standard lists.</p>
+        <!-- picture of list -->
+
+        <h4> Useful Functions </h4>
+        <p>As we move onto useful functions in the Wolfram Language, we can start with Range.</p>
+        <!-- picture of range -->
+        <p>As seen above, this function can take in two numbers and return a list of integers between them. By default, if you only specify one number, it returns a list of integers between 1 and that number.</p>
+        <p>ListPlot (shown below) takes in a list of points in the form of coordinates and returns a scatter plot of those points.</p>
+        <!-- picture of listplot -->
+        <p>Print is a simple function that’s self-explanatory:</p>
+        <!-- picture of print -->
+        <p>We can now focus on more graphics-oriented functions:</p>
+        <!-- picture of Graphics -->
+        <!-- picture of Graphics3D -->
+        <p>The two functions both take in primitives and options, with primitives being simple objects that the functions return as graphical images in either 2D (Graphics) or 3D (Graphics3D). Options, which are not specified in the above examples, are specific ways we can manipulate the image that is returned, such as specifying whether to draw axes. In the example for Graphics, the primitive is a Disk that is centered at point (0,0). In the example for Graphics3D, the primitive is a Sphere that is centered at point (0,0,0) and has a radius of 3.</p>
+        <p>Plot3D returns a 3D graph of a function with minimum and maximum x and y values.</p>
+        <!-- picture of Plot3D -->
+        <p>TemplateApply inserts specified values into a specified template.</p>
+        <!-- picture of TemplateApply -->
+        <p>As seen in the example above, if specifying a string template, the function StringTemplate must be used. The tick marks are used to specify the location where the value should be inserted. <*...*> is used to insert values that should be evaluated, such as a function.</p>
+        
+        <h4> Interactive Features </h4>
+        <p>Mathematica also allows for interactive features. Manipulate adds a slider to a specified item, which is similar to the functionality of Desmos.</p>
+        <!-- picture of Manipulate -->
+        <p>TabView takes in a list of items and allows you to switch between them using tabs.</p>
+        <!-- picture of TabView -->
+        <p>Button creates a button with a specified label and links it to a specified action when you click on it.</p>
+        <!-- picture of Button -->
+
+        <h3> Applications of Mathematica </h3>
+        <p>Mathematica can be used for web development, and an interesting application is to use it to create interactive websites. You can create embeddable code through EmbedCode, which takes in an object. This form of EmbedCode, which just takes in an object, returns a string to be inserted into an HTML file. You can also download this HTML file in Mathematica Online. For it to function properly, you must use CloudDeploy on the object, which deploys the object to a new cloud object. Another thing you must do is insert another argument, which is Permissions -> “Public”. This is so that everyone in the public can view the page. If you don’t specify this, other people cannot view it.</p>
+        <!-- picture of EmbedCode -->
+        <!-- picture of webpage with that embedded code -->
+        <p>As you can see, the embedded code works the way it should, creating a page with the Manipulate example we previously showed.</p>
+        <p>All in all, Mathematica is a useful and powerful tool that can be used for your webpages if you choose. If you would like to learn more about Mathematica click <a href="https://github.com/RoshaniS5/Roshani-Shrestha-Individual-Workshop-Repo/tree/main/mathematica_presentation">here</a>. Here you can access our slides, demonstrations notebook file, and some links for further information.</p>
     </body>
 </html>
